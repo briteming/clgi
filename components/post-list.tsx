@@ -15,22 +15,24 @@ export default function PostList({ posts }: PostListProps) {
           href={`/post/${post.id}`}
         >
           <article>
-            <h1 className="text-2xl font-bold my-4">
+            <h1 className="text-2xl font-bold mb-4">
               {post.frontmatter.title}
             </h1>
-            <p className="mt-4 text-wrap break-words leading-7">
-              【{post.frontmatter.date}】{post.frontmatter.summary}
+            <p className="mt-4 text-wrap break-words leading-7 text-gray-600">
+              {post.frontmatter.summary}
             </p>
             {post.frontmatter.categories && (
               <div className="mt-4 flex gap-2">
-                {post.frontmatter.categories.map((cat: string) => (
-                  <span
-                    key={cat}
-                    className="px-2 py-1 text-sm bg-gray-100 rounded"
-                  >
-                    {cat}
-                  </span>
-                ))}
+                {[post.frontmatter.date, ...post.frontmatter.categories].map(
+                  (cat: string) => (
+                    <span
+                      key={cat}
+                      className="px-2 py-1 text-sm bg-gray-100 rounded"
+                    >
+                      {cat}
+                    </span>
+                  )
+                )}
               </div>
             )}
           </article>

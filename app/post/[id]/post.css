@@ -14,7 +14,7 @@
   
   /* 标题层级 */
   h1, h2, h3, h4 {
-    @apply font-semibold text-gray-800;
+    @apply font-semibold text-gray-700;
     margin: 2rem 0 1rem;
   }
   
@@ -58,7 +58,7 @@
   
   /* 链接样式 */
   a {
-    @apply text-gray-900 no-underline border-b border-dotted border-gray-500
+    @apply text-gray-700 no-underline border-b border-dotted border-gray-500
            transition-all duration-200;
   }
   

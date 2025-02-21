@@ -18,7 +18,7 @@ export default function AboutPage() {
               前端开发工程师
             </h1>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              做自己的追风者
+              主职前端开发工程师，业务时间也需要折腾一些好玩的项目，学习新技术吗，立志要做自己的追风者~
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function AboutPage() {
               "TypeScript",
               "Next.js",
               "Nuxt.js",
-              "Node",
+              "NodeJS",
               "Tailwind CSS",
               "JavaScript",
               "HTML/CSS",

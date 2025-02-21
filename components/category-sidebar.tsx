@@ -16,14 +16,14 @@ export default function CategorySidebar({
     <>
       {/* 移动端横向布局 */}
       <div className="md:hidden w-full overflow-x-auto sticky left-0 top-20">
-        <div className="bg-white shadow-md p-4">
+        <div className="bg-white shadow-md p-4 w-full overflow-auto">
           <div className="flex gap-2 min-w-max">
             <Link
               href="/page/1"
               className={`px-3 py-2 rounded-full text-sm whitespace-nowrap
                 ${
                   !currentCategory
-                    ? "bg-gray-500 text-white"
+                    ? "bg-gray-400 text-white"
                     : "bg-gray-100 hover:bg-gray-200"
                 }`}
             >
@@ -36,7 +36,7 @@ export default function CategorySidebar({
                 className={`px-3 py-2 rounded-full text-sm whitespace-nowrap
                   ${
                     category === currentCategory
-                      ? "bg-gray-500 text-white"
+                      ? "bg-gray-400 text-white"
                       : "bg-gray-100 hover:bg-gray-200"
                   }`}
               >
@@ -67,7 +67,7 @@ export default function CategorySidebar({
                 className={`block p-2 rounded transition-colors
                   ${
                     !currentCategory
-                      ? "bg-gray-500 text-white"
+                      ? "bg-gray-400 text-white"
                       : "hover:bg-gray-100"
                   }`}
               >
@@ -81,7 +81,7 @@ export default function CategorySidebar({
                   className={`block p-2 rounded transition-colors
                     ${
                       category === currentCategory
-                        ? "bg-gray-500 text-white"
+                        ? "bg-gray-400 text-white"
                         : "hover:bg-gray-100"
                     }`}
                 >

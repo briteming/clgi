@@ -20,7 +20,7 @@ const Post = async ({ params }: any) => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl mb-6 font-bold text-gray-900">
+      <h1 className="text-3xl mb-6 font-bold text-gray-700">
         {frontmatter.title}
       </h1>
 
@@ -36,9 +36,9 @@ const Post = async ({ params }: any) => {
             </span>
           </span>
         ))}
-        <span id="busuanzi_container_site_pv">
+        {/* <span id="busuanzi_container_site_pv">
           阅读量:<span id="busuanzi_value_site_pv"></span>
-        </span>
+        </span> */}
       </div>
       <div
         className="mt-4 cl-post prose prose-lg dark:prose-invert max-w-none"

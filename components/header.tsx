@@ -9,7 +9,7 @@ const Header = () => {
         <span className="text-sm hidden md:inline-block ml-2">
           {process.env.NEXT_PUBLIC_SUB_TITLE}
         </span>
-        <p className="md:hidden text-sm mt-1">
+        <p className="md:hidden text-sm mt-1 text-gray-500">
           {process.env.NEXT_PUBLIC_SUB_TITLE}
         </p>
       </Link>
@@ -18,14 +18,14 @@ const Header = () => {
         {LINKS.map((link: { label: string; src: string }) => (
           <Link
             target="_black"
-            className="font-bold"
+            className="text-gray-500"
             href={link.src}
             key={link.label}
           >
             {link.label}
           </Link>
         ))}
-        <Link className="font-bold" href="/about">
+        <Link className="text-gray-500" href="/about">
           About
         </Link>
       </ul>
