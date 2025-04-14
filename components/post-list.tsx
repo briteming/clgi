@@ -15,9 +15,7 @@ export default function PostList({ posts }: PostListProps) {
           href={`/post/${post.id}`}
         >
           <article>
-            <h1 className="text-2xl font-bold mb-4">
-              {post.frontmatter.title}
-            </h1>
+            <h1 className="text-2xl mb-4">{post.frontmatter.title}</h1>
             <p className="mt-4 text-wrap break-words leading-7 text-gray-600">
               {post.frontmatter.summary}
             </p>

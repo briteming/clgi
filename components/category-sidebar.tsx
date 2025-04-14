@@ -57,7 +57,7 @@ export default function CategorySidebar({
       </div>
 
       {/* PC端竖向侧边栏 */}
-      <aside className="hidden md:block w-64 flex-shrink-0 sticky top-24 self-start">
+      <aside className="hidden md:block w-64 flex-shrink-0 sticky top-24 self-start shadow">
         <div className="bg-white p-4 shadow-md rounded-lg">
           <h2 className="text-xl font-bold mb-4">文章分类</h2>
           <ul className="space-y-2">
