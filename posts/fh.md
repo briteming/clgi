@@ -1,7 +1,7 @@
 ---
 title: "战马"
 date: "2025-12-19T00:02:00"
-categories: "misc"
+categories: "Product"
 summary: "这是一个视频“
 ---
 
