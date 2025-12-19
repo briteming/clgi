@@ -32,7 +32,7 @@ export async function getPost(id: string) {
     const { data: frontmatter, content } = matter(markdownWithMeta);
 
     const processedContent = await remark()
-      .use(remarkRehype)
+      .use(remarkRehype, { sanitize: false })
       .use(rehypeSlug)
       .use(rehypeHighlight)
       .use(rehypeStringify)
